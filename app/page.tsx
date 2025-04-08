@@ -50,11 +50,7 @@ const page = () => {
 
           <div className="absolute inset-0 bg-black opacity-50 z-[-1]" />
         </div>
-      </section>
-      <section id="About">
-        <div>
-          {/*1*/}
-          <div className="relative w-full flex flex-col p-10 0overflow-hidden " style={{ height: 'calc(100vh - 4rem)' }}>
+        <div className="relative w-full flex flex-col p-10 0overflow-hidden " style={{ height: 'calc(100vh - 4rem)' }}>
             <video
               className="absolute top-0 left-0 w-full h-full object-cover brightness-50"
               autoPlay
@@ -79,7 +75,10 @@ const page = () => {
             </div>
 
           </div>
-          {/*2*/}
+      </section>
+      <section id="About">
+        <div>
+          {/*1*/}
           <div className="relative w-full bg-gray-900 p-10" style={{ minHeight: 'calc(100vh - 4rem)' }}>
             <div className="text-white z-10 p-10">
               <FadeUpWhenVisible>
@@ -112,7 +111,7 @@ const page = () => {
               </FadeUpWhenVisible>
             </div>
           </div>
-          {/*3*/}
+          {/*2*/}
           <div
             className="bg-gradient-to-br from-blue-400 to-purple-400 p-10 relative w-full overflow-hidden"
             style={{ minHeight: 'calc(100vh - 4rem)' }}
