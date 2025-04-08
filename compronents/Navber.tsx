@@ -38,7 +38,7 @@ const Navbar = () => {
         });
       },
       {
-        threshold: 0.3,
+        threshold: 0.3, // อาจจะลองปรับค่า threshold ดู
       }
     );
 
@@ -46,6 +46,7 @@ const Navbar = () => {
       const el = document.getElementById(id);
       if (el) observer.observe(el);
     });
+
     const handleInitialSection = () => {
       for (const id of sections) {
         const el = document.getElementById(id);
@@ -70,8 +71,10 @@ const Navbar = () => {
       }
     };
     handleInitialSection();
+
     return () => observer.disconnect();
   }, []);
+
   return (
     <header>
       <nav className="backdrop-blur-md bg-white/10 p-4 fixed top-0 left-0 w-full z-20">
