@@ -84,7 +84,9 @@ const Navbar = () => {
               <a
                 key={sec}
                 href={`#${sec}`}
-                ref={(el) => (linkRefs.current[sec] = el)}
+                ref={(el) => {
+                  linkRefs.current[sec] = el;
+                }}
                 className={`${activeSection === sec ? "text-blue-500" : "text-white"
                   } hover:scale-[1.2] transition-transform duration-300 capitalize relative`}
               >
