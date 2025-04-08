@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/compronents/Navber";
 import { IBM_Plex_Sans } from 'next/font/google'
-import { Noto_Sans_Thai } from 'next/font/google'
 import Foooter from "@/compronents/Footer";
 
 const ibmPlexSans = IBM_Plex_Sans({
@@ -12,15 +11,10 @@ const ibmPlexSans = IBM_Plex_Sans({
   display: 'swap', // แนะนำเพื่อ UX ที่ดี
 })
 
-const notoSansThai = Noto_Sans_Thai({
-  subsets: ['thai'],
-  weight: ['400', '700'],
-  variable: '--font-thai',
-})
 
 export const metadata: Metadata = {
-  title: "Solo Leveling",
-  description: "A Next.js camping website example"
+  title: "Tech Company",
+  description: "Tech Company,Tech"
 };
 
 export default function Layout({ children }: { children: ReactNode }) {
